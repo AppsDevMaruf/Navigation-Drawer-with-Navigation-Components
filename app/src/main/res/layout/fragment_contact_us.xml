@@ -1,19 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#AC0606"
-    tools:context=".ContactUsFragment">
-
-    <!-- TODO: Update blank fragment layout -->
+    xmlns:tools="http://schemas.android.com/tools">
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textSize="25dp"
-        android:gravity="center"
-        android:textStyle="bold"
-        android:textColor="@color/white"
-        android:text="Contact Fragment" />
+        android:id="@+id/textView1"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:text="Audio Controller"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" />
 
-</FrameLayout>
+    <Button
+        android:id="@+id/button1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="48dp"
+        android:text="start"
+        tools:ignore="NotSibling" />
+
+    <Button
+        android:id="@+id/button2"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button1"
+        android:layout_toRightOf="@+id/button1"
+        android:text="pause"
+        tools:ignore="NotSibling" />
+
+    <Button
+        android:id="@+id/button3"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button2"
+        android:layout_toRightOf="@+id/button2"
+        android:text="stop"
+        tools:ignore="NotSibling" />
+
+</RelativeLayout>
